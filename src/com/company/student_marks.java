@@ -7,9 +7,9 @@ public class student_marks {
         // write your code here
         int maths, physics, chemistry, computersc, english;
         double finalscore;
-        boolean result = true;
+        boolean result;
         Scanner marks = new Scanner(System.in);
-        while(result)
+        do
             {
                 System.out.println("Enter Marks for Maths:");
                 maths = marks.nextInt();
@@ -47,7 +47,7 @@ public class student_marks {
                 System.out.println("Any more students? (true or false)");
                 result = marks.nextBoolean();
 
-            }
+            }while(result);
 
     }
 }
